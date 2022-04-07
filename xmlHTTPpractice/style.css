@@ -1,12 +1,5 @@
-table{
-    border: 1px solid black;
-}
+table{ border: 1px solid black; }
 
-td{
-    border: 1px dashed black;
-    
-}
+td{ border: 1px dashed black; }
 
-.col{
-    background-color: pink;
-}
+.col{ background-color: pink; }

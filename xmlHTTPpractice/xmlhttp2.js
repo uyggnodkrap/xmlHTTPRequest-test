@@ -1,7 +1,3 @@
-/**
- * https://jsonplaceholder.typicode.com/users
- */
-
 const btn = document.getElementById("button");
 const table = document.getElementById('table');
 
@@ -16,7 +12,7 @@ xhr.send();
 xhr.onreadystatechange = () => {
 
     if (xhr.readyState == 4){
-        const responseData = xhr.responseText; // string 형태로 받게됨
+        const responseData = xhr.responseText;
         const parsedData = JSON.parse(responseData);
         
         for (let i = 0; i < parsedData.length; i++){
@@ -26,7 +22,6 @@ xhr.onreadystatechange = () => {
         }
     }
 };
-
 
 let i = 0;
 btn.addEventListener('click', () => {
